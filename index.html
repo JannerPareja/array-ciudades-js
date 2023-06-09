@@ -1,0 +1,22 @@
+<!-- Vector o Array -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cities</title>
+    <!-- JS Files -->
+    <script src="js/cities.js"></script>
+</head>
+    <body>
+        <select name="ciudad">
+            <script>
+                cities.forEach(city => {
+                    document.write("<option>" + city.code + " | " + city.name + "</option>");
+                });
+            </script>
+            <option selected>Seleccionar ciudad..</option>
+        </select>
+    </body>
+</html>
